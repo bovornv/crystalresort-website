@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "main": "Main",
+    "rooms": "Rooms",
+    "cafe": "Café",
+    "gallery": "Gallery",
+    "location": "Location"
+  },
+  "hero": {
+    "headline": "Crystal Resort Korat",
+    "subheadline": "Boutique & Budget Resort & Café next to The Mall Korat",
+    "bookNow": "Book Now",
+    "tag": "RESORT NEXT TO THE MALL KORAT"
+  },
+  "amenities": {
+    "title": "Amenities",
+    "description": "At Crystal Resort Korat we offer about 80 tasteful guest rooms in boutique modern style with good quality of amenities you need. Although the room accommodations vary, each room is fully equipped with 32\" (or bigger) flat screen TV with cable channels, refreshing with coffee set, air conditioner, private bathroom and a large cozy bed for your perfect rest. Besides, wireless high speed internet access, parking lots, 24-hour reception and security are provided for your convenience.",
+    "breakfast": "Daily Breakfast",
+    "frontdesk": "24-hour Front Desk",
+    "laundry": "Laundry Service",
+    "cctv": "CCTV Security",
+    "parking": "Carpark",
+    "elevator": "Elevator",
+    "wifi": "Free Wi-Fi"
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "suite": {
+      "name": "Suite",
+      "desc": "48 sqm, Max 3 pax, THB 1,490 / night",
+      "label": "Great for Family",
+      "size": "48 sqm",
+      "pax": "Max 3 pax",
+      "oldPrice": "1,790",
+      "newPrice": "1,490",
+      "amenities": "Newly Renovated in 2025 • Living Room/ Bedroom • King-size bed • Free Wi-Fi • Sofa set • Air-conditioner • Hot water • Two Smart Flat screen TVs • Cable TV 80 channels • Refrigerator • Microwave • Bathroom amenity set • Towels & toiletries • Hair dryer • Laundry & cleaning service"
+    },
+    "deluxeTwin": {
+      "name": "Deluxe 2 Beds",
+      "desc": "24 sqm, Max 2 pax, THB 1,090 / night",
+      "label": "Great for Couple",
+      "size": "24 sqm",
+      "pax": "Max 2 pax",
+      "oldPrice": "1,490",
+      "newPrice": "1,090",
+      "amenities": "Newly Renovated in 2025 • 2 twin-size beds • Free Wi-Fi • Air-conditioner • Hot water • Flat screen TV • Cable TV 80 channels • Refrigerator • Bathroom amenity set • Towels & toiletries • Laundry & cleaning service"
+    },
+    "deluxeKing": {
+      "name": "Deluxe 1 Bed – 6' King",
+      "desc": "24 sqm, Max 2 pax, THB 990 / night",
+      "label": "Great for Couple",
+      "size": "24 sqm",
+      "pax": "Max 2 pax",
+      "oldPrice": "1,390",
+      "newPrice": "990",
+      "amenities": "Newly Renovated in 2025 • King-size bed • Free Wi-Fi • Air-conditioner • Hot water • Flat screen TV • Cable TV 80 channels • Refrigerator • Bathroom amenity set • Towels & toiletries • Laundry & cleaning service"
+    },
+    "deluxeQueen": {
+      "name": "Deluxe 1 Bed – 5' Queen",
+      "desc": "24 sqm, Max 2 pax, THB 890 / night",
+      "label": "Great for Couple",
+      "size": "24 sqm",
+      "pax": "Max 2 pax",
+      "oldPrice": "1,290",
+      "newPrice": "890",
+      "amenities": "Newly Renovated in 2025 • Queen-size bed • Free Wi-Fi • Air-conditioner • Hot water • Flat screen TV • Cable TV 80 channels • Refrigerator • Bathroom amenity set • Towels & toiletries • Laundry & cleaning service"
+    },
+    "seeAll": "See all Rooms",
+    "seeAllRooms": "See all Rooms",
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "compare": "Compare",
+    "from": "From THB",
+    "night": "/ Night"
+  },
+  "cafe": {
+    "title": "Our Café",
+    "conceptTitle": "Crystal Cafe",
+    "open": "OPEN: Everyday 7.00AM - 5.00PM",
+    "location": "LOCATION : In Crystal Resort's garden",
+    "socialMedia": "FB : crystalcafe.korat ,  IG: crystalcafekorat, Tiktok : crystalcafekorat",
+    "phone": "Tel: 095 616 4389",
+    "description": "Crystal Cafe serves drinks, bakery items, and fresh homemade food. The cafe uses ingredients grown by ourselves or sourced from Nakhon Ratchasima province, which are quality and pesticide-free. Coffee beans are carefully selected and specially roasted for Crystal Cafe, so customers can enjoy delicious, quality, and safe food.",
+    "conceptText": "At our working country estate, food is the edible thread that ties all our endeavours together. Our café showcases fresh, seasonal fare, lovingly prepared by our talented chefs."
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "location": {
+    "title": "Map and Location",
+    "attractionsTitle": "Attractions Near Crystal Resort Korat",
+    "intro": "Crystal Resort Korat is ideally located right next to The Mall Korat, offering quick access to hospitals, shopping centers, and cultural attractions around Nakhon Ratchasima.",
+    "gettingHere": "Crystal Resort Korat is ideally located right next to The Mall Korat, offering quick access to hospitals, shopping centers, and cultural attractions around Nakhon Ratchasima.",
+    "viewMap": "View on Google Map",
+    "address": "1268/1 Mittraphap Rd. Naimuang, Muang, Nakorn Ratchasima 30000",
+    "addressEn": "1268/1 Mittraphap Rd. Naimuang, Muang, Nakorn Ratchasima 30000",
+    "fromSuvarnabhumi": "From Suvarnabhumi Airport: By taxi – approximately 3 hours 15 minutes",
+    "fromDonmuang": "From Don Muang Airport: By taxi – approximately 3 hours",
+    "nearestTransport": "Nearest Transport",
+    "mallKorat": "The Mall Korat – 1 min walk",
+    "nearby": "Nearby Places",
+    "nearbyPlaces": "The Mall Korat, Ya Mo, Save One Night Market, Terminal 21, Phimai",
+    "subtitle": "Boutique & Budget Resort next to The Mall Korat",
+    "gettingHereTitle": "Getting to Crystal Resort Korat",
+    "fromSuvarnabhumiTitle": "From Suvarnabhumi Airport",
+    "fromDonmuangTitle": "From Don Muang Airport",
+    "mapTitle": "Map"
+  },
+  "info": {
+    "title": "Resort Policy",
+    "checkinOutTitle": "Check in / Check Out",
+    "checkinLabel": "Check In",
+    "checkin": "From 02:00 PM",
+    "checkoutLabel": "Check Out",
+    "checkout": "Before 12:00 PM",
+    "smokeFree": "Smoke Free Resort",
+    "smokingPolicy": "Smoking allowed only in designated area",
+    "breakfastRateTitle": "Breakfast Rate",
+    "breakfastRate": "THB 95 per person",
+    "extraBedTitle": "Extra Bed",
+    "extraBed": "An adult will be charged THB 300 per person per night in an extra bed.",
+    "kidsStayFreeTitle": "Kids Stay Free!",
+    "kidsStayFree": "Enjoy these benefits for children aged 0–11 years old:"
+  },
+  "contactBar": {
+    "address": "1268/1 Mittraphap Rd. Naimuang, Muang, Nakorn Ratchasima 30000",
+    "addressShort": "1268/1 Mittraphap Rd., Korat"
+  },
+  "footer": {
+    "contact": "Contact Us",
+    "address": "1268/1 Mittraphap Rd. Naimuang, Muang, Nakorn Ratchasima 30000",
+    "phone": "Phone: 044-257-555, 065-632-9868",
+    "email": "Email: enquiry@the-crystalresidence.com",
+    "follow": "Follow Us"
+  }
+}
