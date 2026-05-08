@@ -13,6 +13,9 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/photos/logo.jpg" />
+          {/* TODO: Replace content value with the FULL string from GSC.
+              Currently truncated — go to GSC → Verify ownership → HTML tag → click COPY → replace the content value below. */}
+          <meta name="google-site-verification" content="_Gfqs2nCfpXXHAOC..." />
         </Head>
         <body>
           <Main />
