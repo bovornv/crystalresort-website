@@ -1,7 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useTranslations } from '../lib/TranslationsContext'
 import { useState } from 'react'
+import LineAddFriendButton from './LineAddFriendButton'
 
 export default function Navbar() {
   const t = useTranslations('nav')
@@ -25,9 +27,12 @@ export default function Navbar() {
         {/* First Line: Logo, Resort Name, Language Switcher */}
         <div className="flex items-center justify-between mb-3">
           <Link href="/" className="flex items-center gap-2">
-            <img
+            <Image
               src="/photos/logo.jpg"
-              alt="Crystal Resort Logo"
+              alt="โลโก้ คริสตัล รีสอร์ท โคราช"
+              width={40}
+              height={40}
+              priority
               className="h-10 w-auto object-contain"
             />
             <span className="font-semibold text-xl md:text-2xl text-dark-gray hidden sm:block">
@@ -35,25 +40,30 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Language Switch */}
-          <div className="flex items-center space-x-2 text-sm">
-            <button
-              onClick={() => switchLocale('th')}
-              className={`hover:text-gold transition-colors ${
-                locale === 'th' ? 'text-gold font-semibold' : 'text-gray-600'
-              }`}
-            >
-              🇹🇭 TH
-            </button>
-            <span className="text-gray-300">|</span>
-            <button
-              onClick={() => switchLocale('en')}
-              className={`hover:text-gold transition-colors ${
-                locale === 'en' ? 'text-gold font-semibold' : 'text-gray-600'
-              }`}
-            >
-              🇬🇧 EN
-            </button>
+          {/* Right cluster: LINE CTA + Language Switch */}
+          <div className="flex items-center gap-4">
+            <div className="hidden sm:block">
+              <LineAddFriendButton />
+            </div>
+            <div className="flex items-center space-x-2 text-sm">
+              <button
+                onClick={() => switchLocale('th')}
+                className={`hover:text-gold transition-colors ${
+                  locale === 'th' ? 'text-gold font-semibold' : 'text-gray-600'
+                }`}
+              >
+                🇹🇭 TH
+              </button>
+              <span className="text-gray-300">|</span>
+              <button
+                onClick={() => switchLocale('en')}
+                className={`hover:text-gold transition-colors ${
+                  locale === 'en' ? 'text-gold font-semibold' : 'text-gray-600'
+                }`}
+              >
+                🇬🇧 EN
+              </button>
+            </div>
           </div>
 
           {/* Mobile menu toggle */}
@@ -172,6 +182,10 @@ export default function Navbar() {
           >
             {t('location')}
           </Link>
+
+          <div className="px-4 py-3 border-t border-gray-200">
+            <LineAddFriendButton />
+          </div>
 
           <div className="px-4 py-3 flex space-x-4 text-sm border-t border-gray-200">
             <button

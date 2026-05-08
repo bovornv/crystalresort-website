@@ -1,5 +1,6 @@
-import Head from 'next/head'
+import Image from 'next/image'
 import { useTranslations } from '../lib/TranslationsContext'
+import SeoHead from '../components/SeoHead'
 
 export default function Cafe() {
   const t = useTranslations('cafe')
@@ -42,24 +43,24 @@ export default function Cafe() {
 
   return (
     <>
-      <Head>
-        <title>Café | Crystal Resort Korat</title>
-        <meta
-          name="description"
-          content="Experience our Farm to Table café concept. Fresh, seasonal fare prepared by our talented chefs at Crystal Resort Korat."
-        />
-      </Head>
+      <SeoHead path="/cafe" image="/photos/garden3.jpg" />
+
+      <h1 className="sr-only">
+        คริสตัล คาเฟ่ — คาเฟ่ในโคราช ใกล้เดอะมอลล์โคราช ที่ คริสตัล รีสอร์ท โคราช
+      </h1>
 
       {/* Custom Hero Banner for Cafe Page */}
       <section className="relative w-full h-[50vh] min-h-[350px] overflow-hidden">
         <div className="relative h-full max-w-7xl mx-auto px-4">
           <div className="absolute inset-y-0 left-0 right-0" style={{ left: 'calc((100vw - 100%) / -2)', right: 'calc((100vw - 100%) / -2)' }}>
-            <img
+            <Image
               src="/photos/garden3.jpg"
-              alt="Crystal Resort Korat"
-              className="w-full h-full object-cover brightness-110 contrast-105 saturate-110"
+              alt="คริสตัล คาเฟ่ ในสวนของคริสตัล รีสอร์ท โคราช"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover brightness-110 contrast-105 saturate-110"
               style={{ objectPosition: 'center 40%' }}
-              loading="eager"
             />
             <div className="absolute inset-0 bg-black bg-opacity-20"></div>
           </div>
@@ -226,10 +227,12 @@ export default function Cafe() {
                 key={index}
                 className="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
               >
-                <img
+                <Image
                   src={image}
-                  alt={`Café ${index + 1}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  alt={`คริสตัล คาเฟ่ โคราช — บรรยากาศและเมนู ${index + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
                   style={index === 3 ? { objectPosition: '70% center' } : {}}
                   loading="lazy"
                 />

@@ -1,7 +1,10 @@
+import Image from 'next/image'
 import { useTranslations } from '../lib/TranslationsContext'
+import LineAddFriendButton from './LineAddFriendButton'
 
 export default function Footer() {
   const t = useTranslations('footer')
+  const tContact = useTranslations('contact')
 
   return (
     <footer className="bg-gray-50 border-t border-gray-200 mt-12">
@@ -11,7 +14,20 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-dark-gray mb-3">{t('contact')}</h3>
           <p className="text-sm text-gray-600 mb-1">{t('address')}</p>
           <p className="text-sm text-gray-600 mb-1">{t('phone')}</p>
-          <p className="text-sm text-gray-600">{t('email')}</p>
+          <p className="text-sm text-gray-600 mb-3">{t('email')}</p>
+          <LineAddFriendButton />
+          <div className="mt-4 flex flex-col items-start gap-2">
+            <Image
+              src="/line-qr-crystalresort.png"
+              alt="Crystal Resort Korat LINE QR Code @crystalresort"
+              width={120}
+              height={120}
+              className="rounded-md border border-gray-200 bg-white p-1.5"
+            />
+            <p className="text-xs text-gray-500 max-w-[180px]">
+              {tContact('scanLineQR')}
+            </p>
+          </div>
         </div>
 
         {/* Social Media */}

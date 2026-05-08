@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import { useTranslations } from '../lib/TranslationsContext'
+import SeoHead from '../components/SeoHead'
 import GalleryGrid from '../components/GalleryGrid'
 import HeroBanner from '../components/HeroBanner'
 
@@ -29,20 +29,17 @@ export default function Gallery() {
 
   return (
     <>
-      <Head>
-        <title>Gallery | Crystal Resort Korat</title>
-        <meta
-          name="description"
-          content="View our photo gallery showcasing the beautiful rooms, café, gardens, and facilities at Crystal Resort Korat."
-        />
-      </Head>
+      <SeoHead path="/gallery" />
 
       <HeroBanner />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-dark-gray mb-12">
-          {t('title')}
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-dark-gray mb-4">
+          แกลเลอรี่ คริสตัล รีสอร์ท โคราช
         </h1>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          ภาพห้องพักโคราช คาเฟ่ สวน และสิ่งอำนวยความสะดวก ใกล้เดอะมอลล์โคราช
+        </p>
         <GalleryGrid images={galleryImages} />
       </div>
     </>

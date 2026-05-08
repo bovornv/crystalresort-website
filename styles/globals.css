@@ -13,3 +13,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Subtle pulse for floating LINE CTA */
+@keyframes line-fab-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.35), 0 0 0 0 rgba(6, 199, 85, 0.6);
+  }
+  50% {
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.35), 0 0 0 12px rgba(6, 199, 85, 0);
+  }
+}
+
+.line-fab {
+  animation: line-fab-pulse 2.4s ease-in-out infinite;
+}
+

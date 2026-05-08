@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function GalleryGrid({ images }) {
@@ -20,10 +21,12 @@ export default function GalleryGrid({ images }) {
             className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
             onClick={() => openLightbox(image)}
           >
-            <img
+            <Image
               src={image}
-              alt={`Gallery image ${index + 1}`}
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              alt={`คริสตัล รีสอร์ท โคราช — ห้องพัก คาเฟ่ และสวน ภาพที่ ${index + 1}`}
+              fill
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              className="object-cover group-hover:scale-110 transition-transform duration-300"
               style={index === 11 ? { objectPosition: '70% center' } : {}}
               loading="lazy"
             />
@@ -41,7 +44,7 @@ export default function GalleryGrid({ images }) {
           <div className="relative max-w-7xl max-h-full">
             <img
               src={selectedImage}
-              alt="Lightbox"
+              alt="ภาพขยาย คริสตัล รีสอร์ท โคราช"
               className="max-w-full max-h-[90vh] object-contain"
             />
             <button

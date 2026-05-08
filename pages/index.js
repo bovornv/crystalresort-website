@@ -1,10 +1,12 @@
-import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from '../lib/TranslationsContext'
+import SeoHead from '../components/SeoHead'
 import HeroBanner from '../components/HeroBanner'
 import RoomCard from '../components/RoomCard'
 import AmenitiesGrid from '../components/AmenitiesGrid'
 import MapSection from '../components/MapSection'
+import ContactSection from '../components/ContactSection'
 import StructuredData from '../components/StructuredData'
 
 export default function Home() {
@@ -65,27 +67,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>
-          Crystal Resort Korat | Boutique & Budget Resort Next to The Mall Korat
-        </title>
-        <meta
-          name="description"
-          content="Crystal Resort Korat – boutique & budget 3.5-star resort and café, newly renovated, just steps from The Mall Korat. Enjoy daily breakfast, free Wi-Fi, parking, and 24-hour front desk."
-        />
-        <meta
-          name="keywords"
-          content="Crystal Resort Korat, ที่พักโคราช, โรงแรมโคราช, resort korat, the mall korat hotel, ที่พักใกล้เดอะมอลล์โคราช"
-        />
-        <meta property="og:title" content="Crystal Resort Korat" />
-        <meta
-          property="og:description"
-          content="Boutique & Budget Resort & Café next to The Mall Korat"
-        />
-        <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://crystalresortkorat.com" />
-        <StructuredData />
-      </Head>
+      <SeoHead path="/" />
+      <StructuredData />
+
+      <h1 className="sr-only">
+        คริสตัล รีสอร์ท โคราช — ที่พักใจกลางเมืองนครราชสีมา ใกล้เดอะมอลล์โคราช
+      </h1>
 
       <HeroBanner />
 
@@ -117,8 +104,11 @@ export default function Home() {
       {/* Location & Nearby Section */}
       <MapSection />
 
+      {/* Contact Section */}
+      <ContactSection />
+
       {/* Café Preview Section */}
-      <section className="py-16 bg-gray-100">
+      <section id="cafe" className="py-16 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-dark-gray mb-12">
             {tCafe('title')}
@@ -126,14 +116,24 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {cafeImages.map((image, index) => (
               <div key={index} className="relative aspect-square overflow-hidden rounded-lg">
-                <img
+                <Image
                   src={image}
-                  alt={`Café ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  alt={`คริสตัล คาเฟ่ โคราช — บรรยากาศและเมนู ${index + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/cafe"
+              className="inline-block text-[#A47C53] font-semibold hover:underline"
+            >
+              ดูคาเฟ่ในโคราช คริสตัล คาเฟ่ →
+            </Link>
           </div>
         </div>
       </section>

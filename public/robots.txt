@@ -1,5 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: https://crystalresortkorat.com/sitemap.xml
+# Host
+Host: https://www.the-crystalresidence.com
 
+# Sitemaps
+Sitemap: https://www.the-crystalresidence.com/sitemap.xml

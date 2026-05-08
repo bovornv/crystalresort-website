@@ -132,5 +132,17 @@
     "phone": "Phone: 044-257-555, 065-632-9868",
     "email": "Email: enquiry@the-crystalresidence.com",
     "follow": "Follow Us"
+  },
+  "cta": {
+    "lineAddFriend": "Add us on LINE",
+    "askViaLine": "Ask via LINE"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "lead": "Ask about availability or book your stay — chat with our team on LINE.",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "scanLineQR": "Scan to add LINE @crystalresort"
   }
 }

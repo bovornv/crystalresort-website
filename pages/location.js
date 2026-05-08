@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import { useTranslations } from '../lib/TranslationsContext'
+import SeoHead from '../components/SeoHead'
 import MapSection from '../components/MapSection'
 import HeroBanner from '../components/HeroBanner'
 
@@ -8,22 +8,16 @@ export default function Location() {
 
   return (
     <>
-      <Head>
-        <title>Location | Crystal Resort Korat</title>
-        <meta
-          name="description"
-          content="Crystal Resort Korat is located at 1268/1 Mittraphap Rd. Naimuang, Muang, Nakorn Ratchasima 30000, just 1 minute walk from The Mall Korat."
-        />
-      </Head>
+      <SeoHead path="/location" />
 
       <HeroBanner />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Location Description */}
         <div className="bg-white p-8 rounded-lg shadow-md mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-dark-gray mb-4 text-left">
+          <h1 className="text-2xl md:text-3xl font-bold text-dark-gray mb-4 text-left">
             {t('subtitle')}
-          </h2>
+          </h1>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed text-left">
             {t('intro')}
           </p>

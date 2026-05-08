@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslations } from '../lib/TranslationsContext'
 
@@ -14,10 +15,12 @@ export default function RoomCard({ room }) {
 
         {/* Image */}
         <div className="relative w-full h-56 overflow-hidden">
-          <img
+          <Image
             src={room.image}
-            alt={room.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            alt={`${room.name} — ห้องพักโคราช คริสตัล รีสอร์ท โคราช`}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
           />
         </div>

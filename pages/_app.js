@@ -3,10 +3,11 @@ import { TranslationsProvider } from '../lib/TranslationsContext'
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import FloatingLineButton from '../components/FloatingLineButton'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter()
-  const locale = router.locale || router.defaultLocale || 'en'
+  const locale = router.locale || router.defaultLocale || 'th'
 
   return (
     <TranslationsProvider locale={locale}>
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </main>
         <Footer />
+        <FloatingLineButton />
       </div>
     </TranslationsProvider>
   )

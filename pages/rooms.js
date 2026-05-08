@@ -1,6 +1,7 @@
-import Head from 'next/head'
+import Image from 'next/image'
 import { useTranslations } from '../lib/TranslationsContext'
 import { useState } from 'react'
+import SeoHead from '../components/SeoHead'
 import HeroBanner from '../components/HeroBanner'
 
 export default function Rooms() {
@@ -46,10 +47,12 @@ export default function Rooms() {
           {/* Image Carousel */}
           <div className="relative">
             <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-lg">
-              <img
+              <Image
                 src={room.images[currentImage]}
-                alt={room.name}
-                className="w-full h-full object-cover"
+                alt={`${room.name} — ห้องพักโคราช คริสตัล รีสอร์ท โคราช`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
                 loading="lazy"
               />
             </div>
@@ -98,20 +101,17 @@ export default function Rooms() {
 
   return (
     <>
-      <Head>
-        <title>Rooms | Crystal Resort Korat</title>
-        <meta
-          name="description"
-          content="Choose from our Suite, Deluxe Twin, Deluxe King, and Deluxe Queen rooms. All rooms feature modern amenities, free Wi-Fi, and comfortable accommodations."
-        />
-      </Head>
+      <SeoHead path="/rooms" />
 
       <HeroBanner />
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-center text-dark-gray mb-16">
-          {t('title')}
+        <h1 className="text-4xl md:text-5xl font-bold text-center text-dark-gray mb-4">
+          ห้องพักโคราช ที่ คริสตัล รีสอร์ท โคราช
         </h1>
+        <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+          {t('title')} — ห้องพักนครราชสีมา ใจกลางเมือง ใกล้เดอะมอลล์โคราช
+        </p>
 
         {rooms.map((room) => (
           <RoomCarousel key={room.key} room={room} />
